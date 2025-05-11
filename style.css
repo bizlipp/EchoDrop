@@ -30,18 +30,3 @@ body {
   0% { opacity: 1; }
   100% { opacity: 0; transform: translateY(10px); }
 }
-.glitch-join::after {
-  content: '📡 Joined';
-  color: #0f0;
-  animation: glitch 1s steps(2, start) infinite;
-}
-.glitch-leave::after {
-  content: '🔌 Left';
-  color: #f00;
-  animation: glitch 1s steps(2, start) infinite;
-}
-@keyframes glitch {
-  0% { clip-path: inset(0 0 30% 0); }
-  50% { clip-path: inset(70% 0 0 0); }
-  100% { clip-path: inset(0 0 30% 0); }
-}
