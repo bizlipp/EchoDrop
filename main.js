@@ -1,4 +1,3 @@
-import Peer from 'https://cdn.skypack.dev/peerjs';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { getDatabase, ref, push, onChildAdded, set } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
 
