@@ -14,7 +14,11 @@ const db = getDatabase(app);
 const messageRef = ref(db, 'messages');
 const presenceRef = ref(db, 'presence');
 
-const peer = new Peer();
+const peer = new Peer({
+  host: 'peerjs-server.herokuapp.com',
+  port: 443,
+  secure: true
+});
 const connections = [];
 const appDiv = document.getElementById('app');
 const presenceDiv = document.getElementById('presence');
